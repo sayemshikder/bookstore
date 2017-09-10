@@ -1,0 +1,15 @@
+current directory: /Users/thomasspencer/work/tutorials/bookstore/vendor/gems/bindex-0.5.0/ext/bindex
+/Users/thomasspencer/.rvm/rubies/ruby-2.4.0/bin/ruby -r ./siteconf20170910-78367-13uu2gd.rb extconf.rb
+creating Makefile
+
+current directory: /Users/thomasspencer/work/tutorials/bookstore/vendor/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/thomasspencer/work/tutorials/bookstore/vendor/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/thomasspencer/work/tutorials/bookstore/vendor/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20170910-78367-1khog45/bindex
