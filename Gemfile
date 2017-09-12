@@ -12,7 +12,7 @@ gem 'rails', '~> 5.0.2'
 gem 'devise'
 gem 'simple_form'
 gem 'bootstrap'
-
+gem 'cancan'
 gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'

@@ -1,0 +1,16 @@
+<%= simple_form_for(@book, html: { class: "form-signin" }) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name, required: true, label: false, placeholder: "Title", class: "form-control" %>
+    <%= f.input :author, required: true, label: false, placeholder: "Author", class: "form-control"  %>
+    <%= f.input :description, required: false, label: false, placeholder: "Description", class: "form-control", rows: 5  %>
+    <%= f.input :price, required: true, label: false, class: "form-control" %>
+    Item is available?
+    <%= f.input :availability, label: false, required: true, class: "form-control"  %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

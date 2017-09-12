@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm-6">
+        <%= image_tag "book1.jpg", class: "img-fluid" %>
+    </div>
+
+    <div class="col-sm-6">
+      <h3><%= @book.name %> by <%= @book.author %></h3>
+      <p class="justify"><%= @book.description %>
+      <h4 class="text-left">$<%= @book.price.to_f/100 %></h4>
+      <br>
+      <%= link_to 'Edit', edit_book_path(@book), class: "btn btn-primary" %> 
+      <%= link_to 'Back', books_path, class: "btn btn-primary" %>
+
+    </div>
+
+  </div>
+</div>
+
+

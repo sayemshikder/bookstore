@@ -1,0 +1,14 @@
+<div class="col-md-6">
+    <div class="card card-inverse">
+          <%= link_to book_path(book) do %>
+          <%= image_tag "book1.jpg", class: "card-img img-fluid rounded bg-overlay" %>
+          <% end %>
+          <div class="card-img-overlay">
+            <h4 class="card-title"><%= link_to book.name, book_path(book) %></h4>
+            <p class="card-text strong">$<%= book.price.to_f/100 %></p>
+            <p class="card-text"><%= book.description %></p>
+            <p class="card-text"><%= time_ago_in_words(Time.now) %></small></p>
+              <%= link_to "Go", book_path(book), class: "btn btn-primary" %>
+          </div>
+    </div>
+</div>
