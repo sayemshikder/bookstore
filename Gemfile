@@ -14,6 +14,10 @@ gem 'simple_form'
 gem 'bootstrap'
 gem 'cancan'
 gem 'sqlite3'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'friendly_id'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets

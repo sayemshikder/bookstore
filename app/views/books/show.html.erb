@@ -2,7 +2,7 @@
   <div class="row">
 
     <div class="col-sm-6">
-        <%= image_tag "book1.jpg", class: "img-fluid" %>
+        <%= image_tag @book.image_url, class: "img-fluid" %>
     </div>
 
     <div class="col-sm-6">
@@ -11,6 +11,7 @@
       <h4 class="text-left">$<%= @book.price.to_f/100 %></h4>
       <br>
       <%= link_to 'Edit', edit_book_path(@book), class: "btn btn-primary" %> 
+      <%= link_to 'Delete', book_path(@book), method: :delete, class: 'btn btn-primary' %>
       <%= link_to 'Back', books_path, class: "btn btn-primary" %>
 
     </div>

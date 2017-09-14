@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
    rescue_from CanCan::AccessDenied do |exception|
-   	redirect_to root_path, notice: "You are not allowed to edit this book"
+   	redirect_to root_path
    end
 end

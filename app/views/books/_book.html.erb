@@ -1,7 +1,7 @@
 <div class="col-md-6">
     <div class="card card-inverse">
           <%= link_to book_path(book) do %>
-          <%= image_tag "book1.jpg", class: "card-img img-fluid rounded bg-overlay" %>
+          <%= image_tag book.image_url, class: "card-img img-fluid rounded bg-overlay" %>
           <% end %>
           <div class="card-img-overlay">
             <h4 class="card-title"><%= link_to book.name, book_path(book) %></h4>
